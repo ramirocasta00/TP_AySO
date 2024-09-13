@@ -1,0 +1,32 @@
+cd repogit/
+cd T
+cd TP_AySO/
+ls -la
+git status
+man grep
+man head
+man sort
+grep -v 'nologin' /etc/passwd | head -n 10 | sort -t: -k7 > lista_ordenada
+ls
+git add .
+git commit -m "ADD: Listado de usuarios ordenada"
+git status
+apt search tcpdump
+echo "tcpdump" > comando_dump_net
+echo "Para buscar el comando ejecutar 'apt search tcpdump'" >> comando_dump_net 
+ls
+git add .
+git status
+git command -m "ADD: Comando para Capturar y analizar el tráfico de red"
+git commit -m "ADD: Comando para Capturar y analizar el tráfico de red"
+git status
+cat <<EOF >> README.md 
+Alumno: Ramiro Castañeda
+División: 318
+Turno: Noche
+EOF
+
+git add .
+git commit -m "ADD: Datos alumno"
+git status
+history -a
